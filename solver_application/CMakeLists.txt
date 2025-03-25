@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(solver_application)
+add_subdirectory(../formatter_ex_lib ${CMAKE_CURRENT_BINARY_DIR}/formatter_ex_lib)
+add_subdirectory(../solver_lib ${CMAKE_CURRENT_BINARY_DIR}/solver_lib)
+add_executable(solver equation.cpp)
+target_link_libraries(solver PRIVATE formatter_ex solver_lib)

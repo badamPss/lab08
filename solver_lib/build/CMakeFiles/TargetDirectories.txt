@@ -1,0 +1,3 @@
+/Users/ignatvaschilo/badamPss/workspace/projects/lab03hw/lab03/solver_lib/build/CMakeFiles/solver_lib.dir
+/Users/ignatvaschilo/badamPss/workspace/projects/lab03hw/lab03/solver_lib/build/CMakeFiles/edit_cache.dir
+/Users/ignatvaschilo/badamPss/workspace/projects/lab03hw/lab03/solver_lib/build/CMakeFiles/rebuild_cache.dir
