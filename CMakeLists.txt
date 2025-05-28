@@ -3,11 +3,6 @@ cmake_minimum_required(VERSION 3.10)
 project(lab05)
 
 option(BUILD_TESTS "Build tests" ON)
-option(ENABLE_COVERAGE "Enable coverage reporting" ON)
-
-if(ENABLE_COVERAGE)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
-endif()
 
 add_subdirectory(formatter_lib)
 add_subdirectory(formatter_ex_lib)
@@ -36,7 +31,6 @@ if(BUILD_TESTS)
     formatter_ex
     solver_lib
     gtest_main
-    gmock_main
   )
   add_test(NAME check COMMAND check)
 endif()
