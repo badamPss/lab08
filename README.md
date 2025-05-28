@@ -1,4 +1,4 @@
-![Build](https://github.com/badamPss/lab05/actions/workflows/build.yml/badge.svg)
+![Build](https://github.com/badamPss/lab06/actions/workflows/build.yml/badge.svg)
 ## Laboratory work III
 
 Данная лабораторная работа посвещена изучению систем автоматизации сборки проекта на примере **CMake**
