@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(lab05)
+project(lab06)
 
 option(BUILD_TESTS "Build tests" ON)
 
