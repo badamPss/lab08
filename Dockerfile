@@ -21,8 +21,8 @@ RUN cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install && \
 
 WORKDIR /app/_install/bin
 
-ENV LOG_PATH=/home/logs/log.txt
+ENV LOG_PATH=/app/logs/log.txt
 
-VOLUME ["/home/logs"]
+VOLUME ["/app/logs"]
 
 ENTRYPOINT ["./hello_world"]
