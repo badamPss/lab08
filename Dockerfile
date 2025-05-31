@@ -25,4 +25,4 @@ ENV LOG_PATH=/home/logs/log.txt
 
 VOLUME ["/home/logs"]
 
-ENTRYPOINT ["./hello_world"] 
+ENTRYPOINT ["./hello_world"]
