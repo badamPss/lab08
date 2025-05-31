@@ -1,0 +1,23 @@
+# Build directories
+_build/
+_install/
+build/
+cmake-build-*/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git files
+.git/
+.gitignore
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log 

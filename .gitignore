@@ -1,6 +1,16 @@
 # Prerequisites
 *.d
 
+# Build directories
+build/
+cmake-build-*/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
 # Compiled Object files
 *.slo
 *.lo
@@ -30,3 +40,16 @@
 *.exe
 *.out
 *.app
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+!CMakeLists.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Test files
+file.txt

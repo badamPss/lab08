@@ -1,4 +1,4 @@
-name: CMake Build
+name: Docker Build and Test
 
 on:
   push:
@@ -16,17 +16,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up CMake
-        uses: jwlawson/actions-setup-cmake@v1
+      - name: Create logs directory
+        run: mkdir -p logs
 
-      - name: Create build directory
-        run: cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+      - name: Build Docker image
+        run: docker build -t logger .
 
-      - name: Build
-        run: cmake --build _build
+      - name: Run container and generate logs
+        run: docker run -v "$(pwd)/logs:/home/logs" logger
 
-      - name: Install
-        run: cmake --build _build --target install
+      - name: Check if log file exists
+        run: |
+          if [ ! -f logs/log.txt ]; then
+            echo "Log file was not created"
+            exit 1
+          fi
 
-      - name: Run tests
-        run: ctest --test-dir _build --output-on-failure
+      - name: Upload logs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: logs/
+          retention-days: 5
