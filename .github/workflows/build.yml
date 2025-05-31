@@ -20,7 +20,7 @@ jobs:
         run: docker build -t logger .
 
       - name: Run container and generate logs
-        run: docker run -v "$(pwd)/logs:/home/logs" logger
+        run: docker run -v "$(pwd)/logs:/app/logs" logger
 
       - name: Check if log file exists
         run: |
