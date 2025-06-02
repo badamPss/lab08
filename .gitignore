@@ -3,7 +3,11 @@
 
 # Build directories
 build/
+_build/
+_install/
 cmake-build-*/
+_build/
+_install/
 
 # IDE files
 .idea/
@@ -46,6 +50,11 @@ CMakeCache.txt
 CMakeFiles/
 *.cmake
 !CMakeLists.txt
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+Testing/
 
 # System files
 .DS_Store
@@ -53,3 +62,6 @@ Thumbs.db
 
 # Test files
 file.txt
+
+# Logs
+logs/

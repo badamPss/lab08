@@ -1,4 +1,0 @@
-[2025-05-31 23:26:57] [INFO] Application started
-[2025-05-31 23:26:57] [INFO] Configuration loaded successfully
-[2025-05-31 23:26:57] [INFO] Message formatted and displayed successfully
-[2025-05-31 23:26:57] [INFO] Application finished successfully

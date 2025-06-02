@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Create logs directory
-        run: mkdir -p logs
+      - name: Clean logs directory
+        run: rm -rf logs && mkdir -p logs
 
       - name: Build Docker image
         run: docker build -t logger .
